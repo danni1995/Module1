@@ -1,26 +1,26 @@
+
 @import url('https://fonts.googlepis.com/css?family=Roboto:700&display=swap');
 
 *{
     padding: 0;
     margin:0 ;
+    
 }
-.wrapper {
-    background: url(/Myndir/aðalmynd2.jpg) no-repeat;
-    background-size: cover;
-    height: 100vh;
+
+header{
+    background: gray;;
 }
+/*navbar added and height and widht adjusted*/
 .navbar {
     height: 80px;
     width: 100%;;
 }
 
 .logo{
-    width: 250px;
-    height: auto;
-    padding: 10px 50px ;
-    
+   
+    height: 100%;
 }
-
+/*Making the logo interactive*/
 .logo:hover{
     cursor: pointer;
 }
@@ -31,13 +31,16 @@
     margin-right: 20px;
 
 }
-
+/* Here im making the nacbar look better by making it a row 
+and gicing it a little margin left and right */
 .navbar ul li {
     list-style: none;
     margin: 0 0.5rem;
     display: inline-block;
     line-height: 80px;
 }
+/* Her I am chaning the text in the nacvar, chanign the color, font and 
+making is so there is a slight delay on transition when hovering over. */
 .navbar ul li a{
     text-decoration: none;
     color:black;
@@ -48,40 +51,68 @@
 }
 
 .navbar ul li a:hover{
-    background: pink;
+    background: #B100B5;
     border-radius: 2px;
 }
 
-.wrapper .center{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: sans-serif;
-    user-select: none;
-}
+
 
 .center h1{
-    color:pink;
+    display: flex;
+    justify-content: center;
+    color:#B100B5;
     font-size: 5rem;
     font-weight: bold;
     width: 100%;
     text-align: center;
+    padding-top: 5rem;
+    
 }
 
+main{
+    background: url(/Myndir/aðalmynd2.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+
 .center h2{
-    color:pink;
+    color: #B100B5;
     font-size: 4rem;
     font-weight: bold;
     width: 100%;
     text-align: center;
+    padding-top: 2rem
+    
 }
 
+
+/*Section container, lost/found pets*/
+section{
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+}
+.krummip{
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    font-family: 'roboto',sans-serif;
+    font-weight: 600;
+}
+
+.krummi{
+    
+    height: 20%;
+    width: 20%;
+    border-radius: 50%;
+}
+
+/* centered the buttons and added a little padding*/
 .center .buttons{
     display: flex;
-    margin: 35px 280px;
-
-    
+    justify-content: center;
+    padding-top: 5rem;
 }
 
 .buttons button{
@@ -90,25 +121,38 @@
     font-size:18px ;
     text-align: center;
     font-weight: bold;
-    color: #ffbbff;
-    border: 1px solid #c000c0;
+    color: #B100B5;
+    border: 1px solid #B100B5;
     outline: none;
     cursor: pointer;
     border-radius: 25px;
-    
-
 }
 
 .buttons .btn{
     margin-left: 1rem;
-
-
 }
 
 .buttons button:hover{
-    background:white;
+    background: white;
 }
+/* added a footer and put space between the paragraphswith some basic information*/
 
+footer{
+    display: flex;
+    background-color: gray;
+    
+}
+footer ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    width: 100%;
+    height: 2rem;
+    font-size: 15px;
+    font-family: 'roboto', sans-serif;  
+    font-weight: bold;
+}
+ 
 
  
 
