@@ -1,158 +1,160 @@
 
-@import url('https://fonts.googlepis.com/css?family=Roboto:700&display=swap');
-
-*{
-    padding: 0;
-    margin:0 ;
-    
+* {
+  padding: 0;
+  margin: 0;
 }
 
-header{
-    background: gray;;
+header {
+  background: lightpink;
 }
 /*navbar added and height and widht adjusted*/
 .navbar {
-    height: 80px;
-    width: 100%;;
+  display: flex;
+  height: 80px;
+  width: 100%;
+  justify-content: flex-end;
+  justify-content: space-between;
 }
 
-.logo{
-   
-    height: 100%;
+.navbar__img {
+  display: flex;
+  height: 80px;
 }
 /*Making the logo interactive*/
-.logo:hover{
-    cursor: pointer;
+.navbar__img:hover {
+  cursor: pointer;
 }
 
-
-.navbar ul{
-    float: right;
-    margin-right: 20px;
-
-}
-/* Here im making the nacbar look better by making it a row 
-and gicing it a little margin left and right */
-.navbar ul li {
-    list-style: none;
-    margin: 0 0.5rem;
-    display: inline-block;
-    line-height: 80px;
-}
-/* Her I am chaning the text in the nacvar, chanign the color, font and 
-making is so there is a slight delay on transition when hovering over. */
-.navbar ul li a{
-    text-decoration: none;
-    color:black;
-    font-size: 1.5rem;
-    padding: 6px 13px;
-    font-family: 'roboto', sans-serif;
-    transition: .4s;
+a:link {
+  text-decoration: none;
 }
 
-.navbar ul li a:hover{
-    background: #B100B5;
-    border-radius: 2px;
+.navbar__guide {
+  list-style: none;
+  margin: 0 0.5rem;
+  line-height: 80px;
 }
 
-
-
-.center h1{
-    display: flex;
-    justify-content: center;
-    color:#B100B5;
-    font-size: 5rem;
-    font-weight: bold;
-    width: 100%;
-    text-align: center;
-    padding-top: 5rem;
-    
+.navbar__btns {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-size: 1.5rem;
+  padding: 6px 13px;
 }
 
-main{
-    background: url(/Myndir/aðalmynd2.jpg) no-repeat;
-    background-size: cover;
-    height: 100vh;
+.navbar__btns:hover {
+  transition: 0.4s;
+  background: lightblue;
 }
 
-
-.center h2{
-    color: #B100B5;
-    font-size: 4rem;
-    font-weight: bold;
-    width: 100%;
-    text-align: center;
-    padding-top: 2rem
-    
+.center__main {
+  display: flex;
+  justify-content: center;
+  color: #b100b5;
+  font-family: "Roboto", sans-serif;
+  font-size: 5rem;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  padding-top: 5rem;
 }
 
+main {
+  background: url(/Myndir/aðalmynd2.jpg) no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.center__main2 {
+  color: #b100b5;
+  font-family: "Roboto", sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  padding-top: 2rem;
+}
 
 /*Section container, lost/found pets*/
-section{
-    display: flex;
-    justify-content: center;
-    padding-top: 5rem;
+section {
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
 }
-.krummip{
-    display: flex;
-    justify-content: center;
-    padding-top: 2rem;
-    font-family: 'roboto',sans-serif;
-    font-weight: 600;
+.rescuepets__desc {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
 }
 
-.krummi{
-    
-    height: 20%;
-    width: 20%;
-    border-radius: 50%;
+.rescuepets__img {
+  height: 20%;
+  width: 20%;
+  border-radius: 50%;
 }
 
 /* centered the buttons and added a little padding*/
-.center .buttons{
-    display: flex;
-    justify-content: center;
-    padding-top: 5rem;
+.center__buttons {
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
 }
 
-.buttons button{
-    height: 50px;
-    width: 150px;
-    font-size:18px ;
-    text-align: center;
-    font-weight: bold;
-    color: #B100B5;
-    border: 1px solid #B100B5;
-    outline: none;
-    cursor: pointer;
-    border-radius: 25px;
+.center__lost {
+  height: 50px;
+  width: 150px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  color: #b100b5;
+  border: 1px solid #b100b5;
+  outline: none;
+  cursor: pointer;
+  border-radius: 25px;
 }
 
-.buttons .btn{
-    margin-left: 1rem;
+.center__list {
+  height: 50px;
+  width: 150px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  color: #b100b5;
+  border: 1px solid #b100b5;
+  outline: none;
+  cursor: pointer;
+  border-radius: 25px;
+  margin-left: 1rem;
 }
 
-.buttons button:hover{
-    background: white;
+.center__lost:hover {
+  background: white;
 }
+
+.center__list:hover {
+  background: white;
+}
+
 /* added a footer and put space between the paragraphswith some basic information*/
 
-footer{
-    display: flex;
-    background-color: gray;
-    
+footer {
+  display: flex;
+  background-color: lightpink;
 }
-footer ul{
-    display: flex;
-    justify-content: space-between;
-    padding: 0 2rem;
-    width: 100%;
-    height: 2rem;
-    font-size: 15px;
-    font-family: 'roboto', sans-serif;  
-    font-weight: bold;
+footer ul {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+  width: 100%;
+  height: 2rem;
+  font-size: 15px;
+  font-weight: bold;
 }
- 
 
  
 
