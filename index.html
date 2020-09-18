@@ -4,47 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet Rescue</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">   
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <img  src="/Myndir/icons8-jake.svg" class="logo">
-            <ul>
-                <li><a class="active" href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Help</a></li>
-            </ul>
+            <img class="navbar__img" src="/Myndir/icons8-jake.svg" class="logo">
+                <ul class="navbar__guide">
+                    <a class="navbar__btns" href="#">Home</a>
+                    <a class="navbar__btns" href="#">About</a>
+                    <a class="navbar__btns" href="#">Contact</a>
+                    <a class="navbar__btns" href="#">Help</a>
+                </ul>
         </nav>
     </header>    
 <main>
     <div class="center">
 
-      <h1>Welcome to the animal help center</h1>
-      <h2>Help owners retrieve their pets</h2>
-      <div class="buttons">
-          <button>Lost pets</button>
-          <button class="btn">List lost pet</button>
+      <h1 class="center__main">Welcome to the animal help center</h1>
+      <h2 class="center__main2">Help owners retrieve their pets</h2>
+    
+    <div class="center__buttons">
+          <button class="center__lost">Lost pets</button>
+          <button class="center__list">List lost pet</button>
     </div>
     <div class="rescuepets">
         <section>
-            <img class="krummi" src="/Myndir/Krummi1.jpg" alt="">
+            <img class="rescuepets__img" src="/Myndir/Krummi1.jpg" alt="">
         </section>
     </div>
-    <div class="krummip">
+    <div class="rescuepets__desc">
     <p>This is our latest rescue dog Krummi!</p>
     </div>
 
 </main>
 
-
-
-
-
 <footer>
-    <ul>
-        <div class="p1">
+    <ul class="info">
+        <div>
             <p> Pet rescue ehf. Suðurlandsbraut 19 </p>
         </div>
         <div>
@@ -55,5 +53,7 @@
         </div>
     </ul>
 </footer>
+
+
 </body>
 </html>
